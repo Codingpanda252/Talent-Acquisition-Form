@@ -150,9 +150,9 @@ const App = () => {
   return (
     <div className="main-layout" style={{ overflow: 'hidden', height: '100vh' }}>
       <aside className="template-sidebar">
-        <h2 className="sidebar-title">Explore the following Templates:</h2>
         <ul className="template-list">
           <li className="template-item" onClick={() => goToStep(1)}>New Form</li>
+          <h2 className="sidebar-title">Explore the following Templates:</h2>
           <li className={`template-item ${step === 1 ? 'active' : ''}`} onClick={() => goToStep(1)}>Details Collection</li>
           <li className={`template-item ${step === 2 ? 'active' : ''}`} onClick={() => goToStep(2)}>Document Collection</li>
           <li className={`template-item ${step === 3 ? 'active' : ''}`} onClick={() => goToStep(3)}>Statement of Purpose</li>
